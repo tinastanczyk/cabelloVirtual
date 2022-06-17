@@ -5,9 +5,11 @@ import Contact from './tabs/Contact';
 import About from './tabs/About';
 import Nav from './layout/Nav';
 import Footer from './layout/Footer';
+import Wood from './assets/Wood';
+import './assets/css/Wood.css';
 
 
-function Container() {
+function CabelloVirtualContainer() {
   
   const [currentTab, setCurrentTab] = useState('About');
 
@@ -35,10 +37,12 @@ function Container() {
   return (
     <div>
       <Nav currentTab={currentTab} handleTabChange={handleTabChange} />
+      <Wood />
       {renderTab()}
+      <Wood />
       <Footer />
     </div>
   );
 }
 
-export default Container;
+export default CabelloVirtualContainer;

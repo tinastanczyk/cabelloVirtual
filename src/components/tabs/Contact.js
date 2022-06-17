@@ -1,21 +1,21 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 import '../assets/css/Form.css'
 
 function Form() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   watch,
+  //   formState: { errors },
+  // } = useForm();
+  // const onSubmit = (data) => console.log(data);
 
   return (
     <div className="container">
       <div className="row">
         <div className="col s6 offset-s3">
-          <form onSubmit={handleSubmit(onSubmit)}>
+          {/* <form onSubmit={console.log("submitted")}>
             <input
               placeholder={"Name"}
               {...register("contactName", { required: true, maxLength: 100 })}
@@ -40,7 +40,7 @@ function Form() {
             <br />
             <br />
             <input id="submit-btn" className="waves-effect waves-light btn" type="submit" />
-          </form>
+          </form> */}
         </div>
       </div>
     </div>

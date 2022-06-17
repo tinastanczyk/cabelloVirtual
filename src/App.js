@@ -1,9 +1,11 @@
 import './components/assets/css/App.css';
-import Container from './components/Container';
+import CabelloVirtualContainer from './components/CabelloVirtualContainer';
+import 'materialize-css';
 
 function App() {
   return (
-    <Container />
+    <CabelloVirtualContainer />
+
   );
 }
 
