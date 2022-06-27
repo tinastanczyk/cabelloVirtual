@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "../assets/css/About.css";
 import Headshot from '../assets/Headshot';
 import '../assets/css/Headshot.css';
@@ -6,22 +6,21 @@ import '../assets/css/Headshot.css';
 
 function About() {
   return(
-    <div class="container">
+    <div className="container">
       
       <div>
-        <h1 class="center-align">Cabello Virtual Consultants</h1>
-        <h2 class="center-align">Virtual Assist Services Portfolio</h2>
+        <h1 className="center-align">Cabello Virtual Consultants</h1>
       </div>
       <div>
         <Headshot />
       </div>
       <div>
-        <h3 class="center-align">Welcome, I'm Christine Cabello!</h3>
-        <h4 class="center-align">Founder of Cabello Virtual Consultants</h4>
+        <h3 className="center-align">Welcome, I'm Christine Cabello!</h3>
+        <h4 className="center-align">Founder of Cabello Virtual Consultants</h4>
 
-        <p class="center-align">Hi! I am so happy to meet you! I'm Christine and I'm here to help you focus
+        <p className="center-align">Hi! I am so happy to meet you! I'm Christine and I'm here to help you focus
           on what's important--YOUR BUSINESS! I have a Bachelor's Degree in
-          Business Administration and 20+ years experience in the healthcare
+          Business Administration from St. John's University and 20+ years experience in the healthcare
           industry as an Administrative Assistant and Supervisor! I've worked for
           some of the countries' best hospitals and now I'm using my talents,
           experience and education to help off load the mundane every day tasks of

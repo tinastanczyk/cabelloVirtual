@@ -2,48 +2,35 @@ import React from "react";
 // import { useForm } from "react-hook-form";
 import '../assets/css/Form.css'
 
-function Form() {
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   watch,
-  //   formState: { errors },
-  // } = useForm();
-  // const onSubmit = (data) => console.log(data);
-
-  return (
-    <div className="container">
+function Form(){
+  return(
+    <div className="row">
+    <form className="col s12">
       <div className="row">
-        <div className="col s6 offset-s3">
-          {/* <form onSubmit={console.log("submitted")}>
-            <input
-              placeholder={"Name"}
-              {...register("contactName", { required: true, maxLength: 100 })}
-            />
-            {errors.contactName?.type === "required" && "Name is required."}
-            <input
-              placeholder={"Email"}
-              {...register("email", {
-                required: true,
-                pattern:
-                  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-              })}
-            />
-            {errors.email?.type === "required" && "Email is required."}
-            {errors.email?.type === "pattern" &&
-              "Email must be in proper format. For example: first.last@domain.com."}
-            <input
-              placeholder={"Message"}
-              {...register("message", { required: true, maxLength: 1000 })}
-            />
-            {errors.message?.type === "required" && "A message is required."}
-            <br />
-            <br />
-            <input id="submit-btn" className="waves-effect waves-light btn" type="submit" />
-          </form> */}
+        <div className="input-field col s6">
+          <i className="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" className="validate"></input>
+          <label htmlFor="icon_prefix">Full Name</label>
+        </div>
+        <div className="input-field col s6">
+          <i className="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" className="validate"></input>
+          <label htmlFor="icon_telephone">Telephone</label>
+        </div>
+        <div className="input-field col s6">
+          <i className="material-icons prefix">email</i>
+          <input id="icon_email" type="tel" className="validate"></input>
+          <label htmlFor="icon_email">Email</label>
+        </div>
+        <div className="input-field col s6">
+          <i className="material-icons prefix">pencil</i>
+          <textarea id="icon_pencil" type="tel" className="materialize-textarea"></textarea>
+          <label htmlFor="icon_pencil">Message</label>
         </div>
       </div>
-    </div>
+      <a className="waves-effect waves-light btn" href="/#">Submit</a>
+    </form>
+  </div>
   );
 }
 

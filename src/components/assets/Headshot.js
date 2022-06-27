@@ -6,7 +6,7 @@ function Headshot(){
   return (
     <div className='container'>
       <div className='row center head-row'>
-    <img src = {profPic} alt="headshot"></img>
+    <img className='headshot circle responsive-img' src = {profPic} alt="headshot"></img>
     </div>
     </div>
   );

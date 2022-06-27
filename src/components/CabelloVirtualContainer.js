@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import Testimonies from './tabs/Testimonies';
+import Testimonials from './tabs/Testimonials';
+import WhyVA from './tabs/WhyVA';
 import Services from './tabs/Services';
 import Contact from './tabs/Contact';
 import About from './tabs/About';
 import Nav from './layout/Nav';
 import Footer from './layout/Footer';
-import Wood from './assets/Wood';
-import './assets/css/Wood.css';
+import ParallaxImage from './assets/ParallaxImage';
+import './assets/css/ParallaxImage.css';
 
 
 function CabelloVirtualContainer() {
@@ -19,12 +20,16 @@ function CabelloVirtualContainer() {
       return <About />;
     }
 
+    if(currentTab === 'WhyVA'){
+      return <WhyVA />
+    }
+
     if(currentTab === 'Services'){
       return <Services />
     }
 
-    if(currentTab === 'Testimonies'){
-      return <Testimonies />;
+    if(currentTab === 'Testimonials'){
+      return <Testimonials />;
     }
 
     if(currentTab === 'Contact'){
@@ -37,9 +42,9 @@ function CabelloVirtualContainer() {
   return (
     <div>
       <Nav currentTab={currentTab} handleTabChange={handleTabChange} />
-      <Wood />
+      <ParallaxImage />
       {renderTab()}
-      <Wood />
+      <ParallaxImage />
       <Footer />
     </div>
   );
